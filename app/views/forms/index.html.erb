@@ -1,0 +1,18 @@
+<div align="center">
+<br />
+<br />
+<div class="container">
+<%=form_for Form.new do |f| %>
+
+<%=f.text_field :name,placeholder: "Full Name"%>
+<%=f.date_field :date_of_birth,placeholder: "Date Of Birth"%>
+<%=f.text_field :email,placeholder: "Email Address"%>
+<%=f.number_field :contact_no,placeholder: "Contact No"%>
+<%=f.text_field :branch,placeholder: "Branch"%>
+<%=f.text_field :year,placeholder: "Year"%>
+<br />
+<br/>
+<%=f.submit "Submit",class: "btn waves-effect waves-light blue" %>
+<%end%>
+</div>
+</div>
